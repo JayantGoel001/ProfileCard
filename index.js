@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 "use strict";
 
-const boxen = require("boxen");
-const chalk = require("chalk");
-const inquirer = require("inquirer");
-const clear = require("clear");
-const open = require("open");
-const fs = require("fs");
-const path = require("path");
-const Ora = require("ora");
+import boxen from "boxen";
+import chalk from "chalk";
+import inquirer from "inquirer";
+import clear from "clear";
+import open from "open";
+import fs from "fs";
+import path from "path";
+import Ora from "ora";
 
 clear();
 
 //! importing User Data from data.json
-const res = fs.readFileSync(path.resolve(__dirname, "data.json"));
+const res = fs.readFileSync( "data.json");
 const user_data = JSON.parse(res);
 const {
     name,
