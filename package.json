@@ -1,0 +1,37 @@
+{
+  "name": "jayantgoel001",
+  "version": "1.0.0",
+  "description": "Share one Command to connect with People. Run `npx jayantgoel001` in your terminal.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "npm test",
+    "dev": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayantGoel001/ProfileCard.git"
+  },
+  "keywords": [
+    "JayantGoel001",
+    "Jayant Goel",
+    "JIIT",
+    "profile card",
+    "card",
+    "portfolio"
+  ],
+  "author": "Jayant Goel",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/JayantGoel001/ProfileCard/issues"
+  },
+  "homepage": "https://github.com/JayantGoel001/ProfileCard#readme",
+  "dependencies": { 
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0",
+    "inquirer": "^8.1.0",
+    "open": "^8.2.0",
+    "ora": "^5.4.0"
+  }
+}
