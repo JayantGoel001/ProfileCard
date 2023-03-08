@@ -1,6 +1,6 @@
 {
   "name": "@jayantgoel001/jayantgoel001",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Share one Command to connect with People. Run `npx @jayantgoel001/jayantgoel001` in your terminal.",
   "main": "index.js",
   "bin": "./index.js",

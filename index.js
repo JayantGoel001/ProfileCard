@@ -46,7 +46,7 @@ const questions = [
             {
                 name: `Share Your ${chalk.cyanBright.bold("Profile Card")} and Tell Others: `,
                 value: () => {
-                    open(`https://twitter.com/intent/tweet?text=I created my Profile Card. Run npx ${npx_card_handle} to view. Make Your own at: https://github.com/${github}/ProfileCard Made with Love by @${npx_card_handle}` );
+                    open(`https://twitter.com/intent/tweet?text=I created my Profile Card. Run npx @${npx_card_handle}/${npx_card_handle} to view. Make Your own at: https://github.com/${github}/ProfileCard Made with Love by @${npx_card_handle}` );
                     console.log("\nRedirecting You...\n");
                 },
             },
