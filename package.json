@@ -1,7 +1,7 @@
 {
-  "name": "jayantgoel001",
+  "name": "@jayantgoel001/jayantgoel001",
   "version": "1.0.0",
-  "description": "Share one Command to connect with People. Run `npx jayantgoel001` in your terminal.",
+  "description": "Share one Command to connect with People. Run `npx @jayantgoel001/jayantgoel001` in your terminal.",
   "main": "index.js",
   "bin": "./index.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JayantGoel001/ProfileCard.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "JayantGoel001",

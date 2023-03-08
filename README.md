@@ -7,7 +7,7 @@
 ### <strong>👇 Run this command to see my Profile Card</strong>
 
 ```bash
-npx jayantgoel001
+npx @jayantgoel001/jayantgoel001
 ```
 
 ***
