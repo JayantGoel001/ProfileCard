@@ -12,7 +12,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - name: Publish package on NPM 📦
-        run: npm publish
+        run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   
@@ -28,7 +28,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@octocat'
       - name: Publish package on Github NPM 📦
-        run: npm publish --registry=https://npm.pkg.github.com/
+        run: npm publish --registry=https://npm.pkg.github.com/ --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_NPM_TOKEN }}
   
