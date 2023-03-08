@@ -6,15 +6,22 @@ import chalk from "chalk";
 import inquirer from "inquirer";
 import clear from "clear";
 import open from "open";
-import fs from "fs";
-import path from "path";
 import Ora from "ora";
 
 clear();
 
-//! importing User Data from data.json
-const res = fs.readFileSync( "data.json");
-const user_data = JSON.parse(res);
+// User Data.
+const user_data = {
+    "name": "Jayant Goel",
+    "email": "jgoel92@gmail.com",
+    "job_title": "Assosiate Software Developer Engineer-1",
+    "workplace": "Publicis Sapient",
+    "npx_card_handle": "jayantgoel001",
+    "twitter": "JayantGoel001",
+    "website": "https://jayantgoel001.github.io/", 
+    "linkedin": "JayantGoel001",
+    "github": "JayantGoel001"
+};
 const {
     name,
     email,
@@ -51,7 +58,6 @@ const questions = [
                     console.log("\nOpening your Email application. See you at my Inbox\n");
                 },
             },
-            
             // Here you can add your Projects or Portfolio.
             {
                 name: `Open ${chalk.yellow.bold("My Personal Portfolio")}?`,
@@ -133,19 +139,19 @@ const Loaded = () => {
     setTimeout(() => {
         spinner.indent = 30;
         spinner.spinner = 'soccerHeader';
-        spinner.text = `${chalk.green('Support Project by giving a Star ⭐ ')}`;
+        spinner.text = chalk.green('Support Project by giving a Star ⭐ ');
     }, 2000);
     
     setTimeout(() => {
         spinner.indent = 30;
         spinner.spinner = 'soccerHeader';
-        spinner.text = `${chalk.yellow('Card sent to Press...')}`; 
+        spinner.text = chalk.yellow('Card sent to Press...'); 
     }, 4000);
     
     setTimeout(() => {
         spinner.indent = 30;
         spinner.spinner = 'soccerHeader';
-        spinner.text = `${chalk.magentaBright('Card is Ready for Printing...')}`; 
+        spinner.text = chalk.magentaBright('Card is Ready for Printing...'); 
     }, 6000);
     
     setTimeout(() => {
